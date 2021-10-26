@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Lights out game</title>
   <link rel="stylesheet" type="text/css" href="main.css">
   <script type="text/javascript" src="lightsoutgame.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
+
 <body>
   <div id="container">
     <div id="board"></div>
     <p id="attempts"></p>
     <div id="gamesetup">
       <button id="restart">Od nowa</button>
+      <button id="help">pomoc</button>
+
       <form id="createGameForm"">
-          <button type=" submit">Create board</button>
-      </form>
+        <div class=" row">
+        <div class="column">
+          <img src="1.png" alt="Snow" style="width:30%">
+          <input type="radio" id="choice" name="fav_language" value="1">
+
+        </div>
+        <div class="column">
+          <img src="2.png" alt="Forest" style="width:30%">
+          <input type="radio" id="choice" name="fav_language" value="2">
+
+        </div>
+        <div class="column">
+          <img src="3.png" alt="Mountains" style="width:30%">
+          <input type="radio" id="choice" name="fav_language" value="3">
+        </div>
     </div>
+
+
+
+
+    <button type=" submit">Create board</button>
+    </form>
+  </div>
   </div>
 </body>
+
 </html>
